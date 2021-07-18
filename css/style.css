@@ -3461,6 +3461,7 @@ td.invert-image a img {
     margin-top: 12px;
     color: #fff;
     font-size: 14px;
+    float: right;
 }
 
 .checkout-details {
@@ -3927,7 +3928,7 @@ img {
     font-size: 28px;
     color: #222222;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 63px;
     margin-bottom: 62px;
 }
 
@@ -3964,7 +3965,7 @@ img {
     font-size: 28px;
     color: #222222;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 68px;
     margin-bottom: 30px;
 }
 
@@ -4013,7 +4014,7 @@ img {
     font-size: 28px;
     color: #222222;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 77px;
     margin-bottom: 30px;
 }
 
@@ -4071,7 +4072,7 @@ img {
     font-size: 28px;
     color: #222222;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 86px;
     margin-bottom: 30px;
 }
 

@@ -1432,7 +1432,7 @@
     }
     .trending .home-cate {
         display: flex;
-        padding: 17px 63px;
+        padding: 22px 39px;
         justify-content: space-between;
     }
     .trending .home-cate {
@@ -1446,6 +1446,15 @@
     }
     .text-form-footer {
         margin-left: 33px;
+    }
+    .category .main-cate {
+        margin-bottom: 31px;
+    }
+    .main-cate .home-cate .row-spacer {
+        height: unset;
+    }
+    .Offer .bg {
+        margin-bottom: 18px;
     }
 }
 
@@ -1522,6 +1531,15 @@
     }
     .timetable_sub th {
         font-size: 12px;
+    }
+    .category .main-cate {
+        margin-bottom: 31px;
+    }
+    .main-cate .home-cate .row-spacer {
+        height: unset;
+    }
+    .Offer .bg {
+        margin-bottom: 18px;
     }
 }
 
@@ -1611,6 +1629,15 @@
         margin-top: 11px;
         font-size: 14px;
     }
+    .category .main-cate {
+        margin-bottom: 31px;
+    }
+    .main-cate .home-cate .row-spacer {
+        height: unset;
+    }
+    .Offer .bg {
+        margin-bottom: 18px;
+    }
     .contact-agile img {
         width: 100%;
         margin-top: 16px;
@@ -1699,6 +1726,15 @@
     .heading-style i {
         width: 8px;
         height: 8px;
+    }
+    .category .main-cate {
+        margin-bottom: 31px;
+    }
+    .main-cate .home-cate .row-spacer {
+        height: unset;
+    }
+    .Offer .bg {
+        margin-bottom: 18px;
     }
     .heading-style i:nth-child(2) {
         width: 10px;
@@ -1830,7 +1866,34 @@
         width: 199px;
         height: unset;
     }
-    .home-deal .deal-text h3 {}
+    .category .main-cate {
+        margin-bottom: 31px;
+    }
+    .main-cate .home-cate .row-spacer {
+        height: unset;
+    }
+    .Offer .bg {
+        margin-bottom: 18px;
+    }
+    .home-deal .deal-text {
+        padding: unset;
+        padding-top: 27px;
+        padding-left: 20px;
+    }
+    .home-deal {
+        margin-bottom: 15px;
+    }
+    .home-deal .spacer {
+        height: unset;
+    }
+    .home-deal .deal-img {
+        width: 150px;
+        height: 196px;
+    }
+    .trending .home-cate {
+        padding: 5px 39px;
+        margin-bottom: 11px;
+    }
 }
 
 @media(max-width: 320px) {
