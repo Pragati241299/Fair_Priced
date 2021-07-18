@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Fair Priced Food</title>
+    <!--/tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--//tags -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!--pop-up-box-->
+    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//pop-up-box-->
+    <!-- price range -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header-bot-->
+    <div class="header-bot">
+        <div class="header-bot_inner_wthreeinfo_header_mid">
+            <!-- header-bot-->
+            <div class="col-md-4 logo_agile">
+                <h1>
+                    <a href="index.html">
+                        <img class="top-logo" src="images/FP_Logo.png" alt=" ">
+                    </a>
+                </h1>
+            </div>
+            <!-- header-bot -->
+            <div class="col-md-8 header">
+                <div>
+                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+
+                </div>
+                <div>
+                    <a href="#" data-toggle="modal" data-target="#myModal2">
+                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+
+                </div>
+                <!-- <ul>
+                <li>
+                    <a class="" href="">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span> Select Location</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                        <span class="fa fa-truck" aria-hidden="true"></span>Free Delivery</a>
+                </li>
+                <li>
+                    <span class="fa fa-phone" aria-hidden="true"></span> Everyday Essentials
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal2">
+                        <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+                </li>
+            </ul> -->
+                <!-- search -->
+                <div class="agileits_search">
+                    <form action="#" method="post">
+                        <input name="Search" type="search" placeholder="How can we help you today?" required="">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                        <span class="fa fa-search" aria-hidden="true"> </span>
+                    </button>
+                    </form>
+                </div>
+
+                <!-- //search -->
+                <!-- cart details -->
+                <div class="top_nav_right">
+                    <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                        <form action="#" method="post" class="last">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="display" value="1">
+                            <button class="w3view-cart" type="submit" name="submit" value="">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- //cart details -->
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--Login modal-->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body modal-body-sub_agile">
+                    <div class="main-mailposi">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                    </div>
+                    <div class="modal_body_left modal_body_left1">
+                        <h3 class="agileinfo_sign">Login</h3>
+
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <div class="field1">
+                                    <h4 class="modalt">
+                                        Enter your mobile number
+                                    </h4>
+                                    <span class="modalpp">we will send you confirmation code</span>
+                                </div>
+                                <input type="text" name="text*" placeholder="Mobile Number" />
+                                <input type="button" name="next" class="next action-button" value="Continue" />
+                            </fieldset>
+                            <fieldset>
+                                <div id="wrapper">
+
+                                    <div id="dialog">
+                                        <h3>Enter code sent to your phone</h3>
+                                        <span>we sent 4 digit code to number +91 783593XXXX</span>
+                                        <div id="form">
+                                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0"
+                                                max="9" pattern="[0-9]{1}" />
+
+                                        </div>
+
+                                        <div>
+                                            Didn't receive the code?<br />
+                                            <a href="#">Send code again</a><br />
+                                            <a href="#">Change phone number</a>
+                                        </div>
+                                        <!-- <img src="http://jira.moovooz.com/secure/attachment/10424/VmVyaWZpY2F0aW9uLnN2Zw==" alt="test" /> -->
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="button-verify" value="Verify" />
+                            </fieldset>
+                        </form>
+                        <p>
+                            Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                            Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Modal content-->
+        </div>
+    </div>
+    <!--Login-modal-end-->
+    <!--Signup-modal-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body modal-body-sub_agile">
+                    <div class="main-mailposi">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                    </div>
+                    <div class="modal_body_left modal_body_left1">
+                        <h3 class="agileinfo_sign">Register</h3>
+
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <h4 class="modalppp">
+                                    Before continue confirm postal code
+                                </h4>
+                                <input type="text" name="Postal code*" placeholder="Postal code*" />
+                                <input type="button" name="next" class="next action-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <input type="text" name="Postal code" placeholder="Postal code*" />
+                                <input type="text" name="House number" placeholder="House number*" />
+                                <input type="text" name="Street name" placeholder="Street name*" />
+                                <input type="text" name="Mobile numbe" placeholder="Mobile number*" />
+                                <input type="text" name="Email address" placeholder="Email address*" />
+                                <div class="addres-signup">
+                                    <div class="signup-mod"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                    <div class="signup-mod1"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                    <div class="signup-mod"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="button-verify" value="Continue" />
+
+                            </fieldset>
+                        </form>
+                        <p>
+                            Already have an account?
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                            Sign in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Modal content-->
+        </div>
+    </div>
+    <!--signup-modal-end-->
+    <!-- navigation -->
+    <div class="ban-top">
+        <div class="container">
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                        </div>
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Confectionary
+										<span class="caret"></span>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Crisps & Snacks
+										<span class="caret"></span>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Drinks
+										<span class="caret"></span>
+									</a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="agile_inner_drop_nav_info">
+                                            <div class="col-sm-4 multi-gd-img">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a href="#">fizzy drinks</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">squash & cordial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">flavourd water</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">coffee</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">tea</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">fruit juice</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">smoothies</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4 multi-gd-img">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a href="product.html">hot chocolates</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">beer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">cider</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">wine</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">coffee</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">sports energy drinks</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">fruit juice</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4 multi-gd-img">
+                                                <img src="images/nav.png" alt="">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alcohol
+										<span class="caret"></span>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Fruit & Veg
+										<b class="caret"></b>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Meat & Poultry
+										<b class="caret"></b>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Ready Meals
+										<b class="caret"></b>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Ice Cream
+										<b class="caret"></b>
+									</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Dairy
+										<b class="caret"></b>
+									</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- //navigation -->
+    <div class="ads-grid">
+        <div class="container">
+            <!-- product left -->
+            <div class="side-bar col-md-3">
+                <div class="left-side">
+                    <h3 class="agileits-sear-head">Filter</h3>
+                    <div id="list1" class="dropdown-check-list" tabindex="100">
+                        <span class="anchor">By Brand</span>
+                        <ul id="items" class="items">
+                            <li><input type="checkbox" />Apple </li>
+                            <li><input type="checkbox" />Orange</li>
+                            <li><input type="checkbox" />Grapes </li>
+                            <li><input type="checkbox" />Berry </li>
+                            <li><input type="checkbox" />Mango </li>
+                            <li><input type="checkbox" />Banana </li>
+                            <li><input type="checkbox" />Tomato</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- price range -->
+                <div class="range">
+                    <h3 class="agileits-sear-head">Price range</h3>
+                    <ul class="dropdown-menu6">
+                        <li>
+                            <div id="slider-range"></div>
+                            <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+                        </li>
+                    </ul>
+                </div>
+                <!-- //price range -->
+                <div class="left-side"><a href="#">Free Delivery</a></div>
+                <div class="left-side"><a href="#">Everyday essentials</a></div>
+                <div class="left-side"><a href="#">£ 2 value</a></div>
+                <div class="left-side"><a href="#">Hot buys</a></div>
+                <div class="left-side"><a href="#">Mealtime</a></div>
+
+                <!-- discounts -->
+                <!-- <div class="left-side">
+                    <h3 class="agileits-sear-head">Discount</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">5% or More</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">10% or More</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">20% or More</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">30% or More</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">50% or More</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked">
+                            <span class="span">60% or More</span>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- //discounts -->
+            </div>
+            <!-- product right -->
+            <div class="agileinfo-ads-display col-md-9">
+                <div class="wrapper">
+                    <div class="product-sec1">
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="images/m1.jpg" alt="">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="product_details.html" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="product-new-top">30% OFF</span> -->
+                                    <span class="product-new-offer">4 for £3.00<br><a href="#">View All</a></span>
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4>
+                                        <a href="single.html">Coca Cola Cherry Bottle 2L</a>
+                                    </h4>
+                                    <p class="productp">(2L) pack of 2<span class="offer">30% OF</span></p>
+
+                                    <div class="info-product-price d-flex justify-content-between">
+                                        <span class="item_price">£ 2.00</span>
+                                        <div class="rating1 mb-3">
+                                            <span class="starRating">
+                                                <input id="rating5" type="radio" name="rating" value="5">
+                                                <label for="rating5">5</label>
+                                                <input id="rating4" type="radio" name="rating" value="4">
+                                                <label for="rating4">4</label>
+                                                <input id="rating3" type="radio" name="rating" value="3" checked="">
+                                                <label for="rating3">3</label>
+                                                <input id="rating2" type="radio" name="rating" value="2">
+                                                <label for="rating2">2</label>
+                                                <input id="rating1" type="radio" name="rating" value="1">
+                                                <label for="rating1">1</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out mt-2">
+                                        <form action="#" method="post">
+                                            <fieldset>
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_name" value="Almonds, 100g" />
+                                                <input type="hidden" name="amount" value="149.00" />
+                                                <input type="hidden" name="discount_amount" value="1.00" />
+                                                <input type="hidden" name="currency_code" value="USD" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add" class="button" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="images/m1.jpg" alt="">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="product_details.html" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="product-new-top">30% OFF</span> -->
+                                    <!-- <span class="product-new-offer">4 for £3.00<br><a href="#">View All</a></span> -->
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4>
+                                        <a href="single.html">Coca Cola Cherry</a>
+                                    </h4>
+                                    <p class="productp">(2L) pack of 2<span class="offer">30% OF</span></p>
+
+                                    <div class="info-product-price d-flex justify-content-between">
+                                        <span class="item_price">£ 2.00</span>
+                                        <div class="rating1 mb-3">
+                                            <span class="starRating">
+                                                <input id="rating5" type="radio" name="rating" value="5">
+                                                <label for="rating5">5</label>
+                                                <input id="rating4" type="radio" name="rating" value="4">
+                                                <label for="rating4">4</label>
+                                                <input id="rating3" type="radio" name="rating" value="3" checked="">
+                                                <label for="rating3">3</label>
+                                                <input id="rating2" type="radio" name="rating" value="2">
+                                                <label for="rating2">2</label>
+                                                <input id="rating1" type="radio" name="rating" value="1">
+                                                <label for="rating1">1</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out mt-2">
+                                        <form action="#" method="post">
+                                            <fieldset>
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_name" value="Almonds, 100g" />
+                                                <input type="hidden" name="amount" value="149.00" />
+                                                <input type="hidden" name="discount_amount" value="1.00" />
+                                                <input type="hidden" name="currency_code" value="USD" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add" class="button" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="images/m1.jpg" alt="">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="product-new-top">30% OFF</span> -->
+                                    <span class="product-new-offer">4 for £3.00<br><a href="#">View All</a></span>
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4>
+                                        <a href="single.html">Coca Cola Cherry</a>
+                                    </h4>
+                                    <p class="productp">(2L) pack of 2<span class="offer">30% OF</span></p>
+
+                                    <div class="info-product-price d-flex justify-content-between">
+                                        <span class="item_price">£ 2.00</span>
+                                        <div class="rating1 mb-3">
+                                            <span class="starRating">
+                                                <input id="rating5" type="radio" name="rating" value="5">
+                                                <label for="rating5">5</label>
+                                                <input id="rating4" type="radio" name="rating" value="4">
+                                                <label for="rating4">4</label>
+                                                <input id="rating3" type="radio" name="rating" value="3" checked="">
+                                                <label for="rating3">3</label>
+                                                <input id="rating2" type="radio" name="rating" value="2">
+                                                <label for="rating2">2</label>
+                                                <input id="rating1" type="radio" name="rating" value="1">
+                                                <label for="rating1">1</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out mt-2">
+                                        <form action="#" method="post">
+                                            <fieldset>
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_name" value="Almonds, 100g" />
+                                                <input type="hidden" name="amount" value="149.00" />
+                                                <input type="hidden" name="discount_amount" value="1.00" />
+                                                <input type="hidden" name="currency_code" value="USD" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add" class="button" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="images/m1.jpg" alt="">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="product-new-top">30% OFF</span> -->
+                                    <span class="product-new-offer">4 for £3.00<br><a href="#">View All</a></span>
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4>
+                                        <a href="single.html">Coca Cola Cherry</a>
+                                    </h4>
+                                    <p class="productp">(2L) pack of 2<span class="offer">30% OF</span></p>
+
+                                    <div class="info-product-price d-flex justify-content-between">
+                                        <span class="item_price">£ 2.00</span>
+                                        <div class="rating1 mb-3">
+                                            <span class="starRating">
+                                                <input id="rating5" type="radio" name="rating" value="5">
+                                                <label for="rating5">5</label>
+                                                <input id="rating4" type="radio" name="rating" value="4">
+                                                <label for="rating4">4</label>
+                                                <input id="rating3" type="radio" name="rating" value="3" checked="">
+                                                <label for="rating3">3</label>
+                                                <input id="rating2" type="radio" name="rating" value="2">
+                                                <label for="rating2">2</label>
+                                                <input id="rating1" type="radio" name="rating" value="1">
+                                                <label for="rating1">1</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out mt-2">
+                                        <form action="#" method="post">
+                                            <fieldset>
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_name" value="Almonds, 100g" />
+                                                <input type="hidden" name="amount" value="149.00" />
+                                                <input type="hidden" name="discount_amount" value="1.00" />
+                                                <input type="hidden" name="currency_code" value="USD" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add" class="button" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //product right -->
+        </div>
+    </div>
+    <div class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- footer second section -->
+                    <div class="w3l-grids-footer">
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/Delivery within 2o minutes.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Delivery within 20 minutes</h3>
+                                <p class="bottom-foot">deliver items within 20 minutes after order</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/time slots available.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Time slots available</h3>
+                                <p class="bottom-foot">choose times slots for delivery</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/Online support 24-7.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Online support 24/7</h3>
+                                <p class="bottom-foot">We are always happy to assist you.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-iconfooter-icon" src="images/Quality assurance.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Quality assurance</h3>
+                                <p class="bottom-foot">We are always happy to assist you.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- //footer second section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="home-footer">
+        <div class="container">
+            <!-- footer third section -->
+            <div class="footer-info w3-agileits-info">
+                <!-- footer categories -->
+                <div class="col-sm-5 address-right">
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <a href="product.html">Confectionary</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Crisps & Snacks</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Drinks</a>
+                            </li>
+                            <li>
+                                <a href="product2.html">Alcohol</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Fruit & Veg</a>
+                            </li>
+                            <li>
+                                <a href="product2.html">Meat & Poultry</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 footer-grids agile-secomk">
+                        <ul>
+                            <li>
+                                <a href="product.html">Ready Meals</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Ice Cream</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Dairy</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Chocolates & Biscuits</a>
+                            </li>
+                            <li>
+                                <a href="product2.html">Personal Care</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //footer categories -->
+                <!-- quick links -->
+                <div class="col-sm-5 address-right">
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+
+                            <li>
+                                <a href="faqs.html">Faqs</a>
+                            </li>
+                            <li>
+                                <a href="terms.html">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Get in Touch</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-map-marker"></i> 123 Sebastian, USA.</li>
+                            <li>
+                                <i class="fa fa-mobile"></i> 333 222 3333 </li>
+                            <li>
+                                <i class="fa fa-phone"></i> +222 11 4444 </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:example@mail.com"> mail@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //quick links -->
+                <!-- social icons -->
+                <div class="col-sm-2 footer-grids  w3l-socialmk">
+                    <h3>Follow Us on</h3>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a class="icon fb" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon tw" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon gp" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="payment-met">
+                        <h3>Payment Method</h3>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <img src="images/pay1.png">
+
+                                </li>
+                                <li>
+                                    <img src="images/pay2.png">
+                                </li>
+                                <li>
+                                    <img src="images/pay3.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- //social icons -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- //footer third section -->
+
+        </div>
+    </footer>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            FP wholesale © 2021. All Rights Reserved
+
+        </div>
+    </div>
+
+    <!-- js-files -->
+    <!-- jquery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- //jquery -->
+
+    <!-- popup modal (for signin & signup)-->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+        });
+    </script>
+    <!-- Large modal -->
+    <!-- <script>
+        $('#').modal('show');
+    </script> -->
+    <!-- //popup modal (for signin & signup)-->
+
+    <!-- cart-js -->
+    <script>
+        var checkoutList = document.getElementById("checkoutList");
+        var checkoutItems = checkoutList.getElementsByClassName("step-checkout_item");
+        for (var i = 0; i < checkoutItems.length; i++) {
+            checkoutItems[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <script>
+        var checkList = document.getElementById('list1');
+        var items = document.getElementById('items');
+        checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (items.classList.contains('visible')) {
+                items.classList.remove('visible');
+                items.style.display = "none";
+            } else {
+                items.classList.add('visible');
+                items.style.display = "block";
+            }
+
+        }
+
+        items.onblur = function(evt) {
+            items.classList.remove('visible');
+        }
+    </script>
+    <script src="js/minicart.js"></script>
+    <script>
+        paypalm.minicartk.render(); //use only unique class names other than paypal1.minicart1.Also Replace same class name in css and minicart.min.js
+
+        paypalm.minicartk.cart.on('checkout', function(evt) {
+            var items = this.items(),
+                len = items.length,
+                total = 0,
+                i;
+
+            // Count the number of each item in the cart
+            for (i = 0; i < len; i++) {
+                total += items[i].get('quantity');
+            }
+
+            if (total < 3) {
+                alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+                evt.preventDefault();
+            }
+        });
+    </script> -->
+    <!-- //cart-js
+
+    <!-- password-script -->
+    <script>
+        window.onload = function() {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- //password-script -->
+
+    <!-- smoothscroll -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smoothscroll -->
+
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            	containerID: 'toTop', // fading element id
+            	containerHoverID: 'toTopHover', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear' 
+            };
+            */
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+
+    <!-- imagezoom -->
+    <script src="js/imagezoom.js"></script>
+    <!-- //imagezoom -->
+
+    <!-- FlexSlider -->
+    <script src="js/jquery.flexslider.js"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
+
+    <!-- flexisel (for special offers) -->
+    <script src="js/jquery.flexisel.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 3,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 2
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //flexisel (for special offers) -->
+
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- //js-files -->
+    <script>
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({
+                        'left': left,
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".previous").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'left': left
+                    });
+                    previous_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".submit").click(function() {
+            return false;
+        })
+    </script>
+    <script>
+        $(function() {
+            'use strict';
+
+            var body = $('body');
+
+            function goToNextInput(e) {
+                var key = e.which,
+                    t = $(e.target),
+                    sib = t.next('input');
+
+                if (key != 9 && (key < 48 || key > 57)) {
+                    e.preventDefault();
+                    return false;
+                }
+
+                if (key === 9) {
+                    return true;
+                }
+
+                if (!sib || !sib.length) {
+                    sib = body.find('input').eq(0);
+                }
+                sib.select().focus();
+            }
+
+            function onKeyDown(e) {
+                var key = e.which;
+
+                if (key === 9 || (key >= 48 && key <= 57)) {
+                    return true;
+                }
+
+                e.preventDefault();
+                return false;
+            }
+
+            function onFocus(e) {
+                $(e.target).select();
+            }
+
+            body.on('keyup', 'input', goToNextInput);
+            body.on('keydown', 'input', onKeyDown);
+            body.on('click', 'input', onFocus);
+
+        })
+    </script>
+    <!-- <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
+</body>
+
+</html>
