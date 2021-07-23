@@ -10,15 +10,16 @@
     <!--//tags -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/font-awesome.css" rel="stylesheet">
-
     <!--pop-up-box-->
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png.png">
     <!--//pop-up-box-->
     <!-- price range -->
     <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
     <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -26,47 +27,26 @@
     <div class="header-bot">
         <div class="header-bot_inner_wthreeinfo_header_mid">
             <!-- header-bot-->
-            <div class="col-md-4 logo_agile">
+            <div class="col-md-2 logo_agile">
                 <h1>
                     <a href="index.html">
-                        <img class="top-logo" src="images/FP_Logo.png" alt=" ">
+                        <img class="top-logo w-100" src="images/FP_Logo.png" alt=" ">
                     </a>
                 </h1>
             </div>
             <!-- header-bot -->
-            <div class="col-md-8 header">
-                <div>
-                    <a href="#" data-toggle="modal" data-target="#myModal1">
-                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+            <div class="col-md-10 header">
+                <!-- <div>
+                <a href="#" data-toggle="modal" data-target="#myModal1">
+                    <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
 
-                </div>
-                <div>
-                    <a href="#" data-toggle="modal" data-target="#myModal2">
-                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+            </div>
+            <div>
+                <a href="#" data-toggle="modal" data-target="#myModal2">
+                    <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
 
-                </div>
-                <!-- <ul>
-                <li>
-                    <a class="" href="">
-                        <span class="fa fa-map-marker" aria-hidden="true"></span> Select Location</a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#myModal1">
-                        <span class="fa fa-truck" aria-hidden="true"></span>Free Delivery</a>
-                </li>
-                <li>
-                    <span class="fa fa-phone" aria-hidden="true"></span> Everyday Essentials
-                </li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#myModal1">
-                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#myModal2">
-                        <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
-                </li>
-            </ul> -->
-                <!-- search -->
+            </div> -->
+
                 <div class="agileits_search">
                     <form action="#" method="post">
                         <input name="Search" type="search" placeholder="How can we help you today?" required="">
@@ -77,19 +57,29 @@
                 </div>
 
                 <!-- //search -->
-                <!-- cart details -->
-                <div class="top_nav_right">
-                    <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                        <form action="#" method="post" class="last">
-                            <input type="hidden" name="cmd" value="_cart">
-                            <input type="hidden" name="display" value="1">
-                            <button class="w3view-cart" type="submit" name="submit" value="">
+                <div class="head-right">
+                    <div class="d-flex">
+                        <div class="auth">
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                                <span class="fa fa-user" aria-hidden="true"></span> Sign In | </a>
+                            <a href="#" data-toggle="modal" data-target="#myModal2">
+                                Register </a>
+
+                        </div>
+
+                    </div>
+                    <div class="top_nav_right">
+                        <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                            <form action="#" method="post" class="last">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="display" value="1">
+                                <button class="w3view-cart" type="submit" name="submit" value="">
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                         </button>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <!-- //cart details -->
                 <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
@@ -865,7 +855,6 @@
                 removalDelay: 300,
                 mainClass: 'my-mfp-zoom-in'
             });
-
         });
     </script>
     <!-- Large modal -->
@@ -897,7 +886,6 @@
                 items.classList.add('visible');
                 items.style.display = "block";
             }
-
         }
 
         items.onblur = function(evt) {
@@ -924,9 +912,8 @@
                 evt.preventDefault();
             }
         });
-    </script> -->
+    </script>
     <!-- //cart-js
-
     <!-- password-script -->
     <script>
         window.onload = function() {
@@ -945,7 +932,6 @@
         }
     </script>
     <!-- //password-script -->
-
     <!-- smoothscroll -->
     <script src="js/SmoothScroll.min.js"></script>
     <!-- //smoothscroll -->
@@ -965,7 +951,6 @@
         });
     </script>
     <!-- //end-smooth-scrolling -->
-
     <!-- smooth-scrolling-of-move-up -->
     <script>
         $(document).ready(function() {
@@ -980,15 +965,12 @@
             $().UItoTop({
                 easingType: 'easeOutQuart'
             });
-
         });
     </script>
     <!-- //smooth-scrolling-of-move-up -->
-
     <!-- imagezoom -->
     <script src="js/imagezoom.js"></script>
     <!-- //imagezoom -->
-
     <!-- FlexSlider -->
     <script src="js/jquery.flexslider.js"></script>
     <script>
@@ -1001,7 +983,6 @@
         });
     </script>
     <!-- //FlexSlider-->
-
     <!-- flexisel (for special offers) -->
     <script src="js/jquery.flexisel.js"></script>
     <script>
@@ -1028,7 +1009,6 @@
                     }
                 }
             });
-
         });
     </script>
     <script>
@@ -1097,7 +1077,6 @@
         $(".previous").click(function() {
             if (animating) return false;
             animating = true;
-
             current_fs = $(this).parent();
             previous_fs = $(this).parent().prev();
 

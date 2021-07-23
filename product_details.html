@@ -6,19 +6,21 @@
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
     <!--//tags -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/font-awesome.css" rel="stylesheet">
     <!--pop-up-box-->
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png.png">
+
     <!--//pop-up-box-->
     <!-- price range -->
     <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
-    <!-- flexslider -->
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -26,64 +28,65 @@
     <div class="header-bot">
         <div class="header-bot_inner_wthreeinfo_header_mid">
             <!-- header-bot-->
-            <div class="col-md-4 logo_agile">
+            <div class="col-md-2 logo_agile">
                 <h1>
                     <a href="index.html">
-                        <img class="top-logo" src="images/FP_Logo.png" alt=" ">
+                        <img class="top-logo w-100" src="images/FP_Logo.png" alt=" ">
                     </a>
                 </h1>
             </div>
             <!-- header-bot -->
-            <div class="col-md-8 header">
-                <ul>
-                    <li>
-                        <a class="" href="">
-                            <span class="fa fa-map-marker" aria-hidden="true"></span> Select Location</a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#myModal1">
-                            <span class="fa fa-truck" aria-hidden="true"></span>Free Delivery</a>
-                    </li>
-                    <li>
-                        <span class="fa fa-phone" aria-hidden="true"></span> Everyday Essentials
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#myModal1">
-                            <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#myModal2">
-                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
-                    </li>
-                </ul>
-                <!-- search -->
+            <div class="col-md-10 header">
+                <!-- <div>
+                <a href="#" data-toggle="modal" data-target="#myModal1">
+                    <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+
+            </div>
+            <div>
+                <a href="#" data-toggle="modal" data-target="#myModal2">
+                    <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+
+            </div> -->
+
                 <div class="agileits_search">
                     <form action="#" method="post">
                         <input name="Search" type="search" placeholder="How can we help you today?" required="">
                         <button type="submit" class="btn btn-default" aria-label="Left Align">
-						<span class="fa fa-search" aria-hidden="true"> </span>
-					</button>
+                        <span class="fa fa-search" aria-hidden="true"> </span>
+                    </button>
                     </form>
                 </div>
+
                 <!-- //search -->
-                <!-- cart details -->
-                <div class="top_nav_right">
-                    <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                        <form action="#" method="post" class="last">
-                            <input type="hidden" name="cmd" value="_cart">
-                            <input type="hidden" name="display" value="1">
-                            <button class="w3view-cart" type="submit" name="submit" value="">
-							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-						</button>
-                        </form>
+                <div class="head-right">
+                    <div class="d-flex">
+                        <div class="auth">
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                                <span class="fa fa-user" aria-hidden="true"></span> Sign In | </a>
+                            <a href="#" data-toggle="modal" data-target="#myModal2">
+                                Register </a>
+
+                        </div>
+
+                    </div>
+                    <div class="top_nav_right">
+                        <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                            <form action="#" method="post" class="last">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="display" value="1">
+                                <button class="w3view-cart" type="submit" name="submit" value="">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <!-- //cart details -->
                 <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
+    <!--Login modal-->
     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -96,29 +99,58 @@
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
                     </div>
                     <div class="modal_body_left modal_body_left1">
-                        <h3 class="agileinfo_sign">Sign In </h3>
-                        <p>
-                            Sign In now, Let's start your Grocery Shopping. Don't have an account?
-                            <a href="#" data-toggle="modal" data-target="#myModal2">
-							Sign Up Now</a>
-                        </p>
-                        <form action="#" method="post">
-                            <div class="styled-input agile-styled-input-top">
-                                <input type="text" placeholder="User Name" name="Name" required="">
-                            </div>
-                            <div class="styled-input">
-                                <input type="password" placeholder="Password" name="password" required="">
-                            </div>
-                            <input type="submit" value="Sign In">
+                        <h3 class="agileinfo_sign">Login</h3>
+
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <div class="field1">
+                                    <h4 class="modalt">
+                                        Enter your mobile number
+                                    </h4>
+                                    <span class="modalpp">we will send you confirmation code</span>
+                                </div>
+                                <input type="text" name="text*" placeholder="Mobile Number" />
+                                <input type="button" name="next" class="next action-button" value="Continue" />
+                            </fieldset>
+                            <fieldset>
+                                <div id="wrapper">
+
+                                    <div id="dialog">
+                                        <h3>Enter code sent to your phone</h3>
+                                        <span>we sent 4 digit code to number +91 783593XXXX</span>
+                                        <div id="form">
+                                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0"
+                                                max="9" pattern="[0-9]{1}" />
+
+                                        </div>
+
+                                        <div>
+                                            Didn't receive the code?<br />
+                                            <a href="#">Send code again</a><br />
+                                            <a href="#">Change phone number</a>
+                                        </div>
+                                        <!-- <img src="http://jira.moovooz.com/secure/attachment/10424/VmVyaWZpY2F0aW9uLnN2Zw==" alt="test" /> -->
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="button-verify" value="Verify" />
+                            </fieldset>
                         </form>
-                        <div class="clearfix"></div>
+                        <p>
+                            Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                            Register</a>
+                        </p>
                     </div>
-                    <div class="clearfix"></div>
                 </div>
             </div>
             <!-- //Modal content-->
         </div>
     </div>
+    <!--Login-modal-end-->
+    <!--Signup-modal-->
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -131,27 +163,43 @@
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
                     </div>
                     <div class="modal_body_left modal_body_left1">
-                        <h3 class="agileinfo_sign">Sign Up</h3>
-                        <p>
-                            Come join the Grocery Shoppy! Let's set up your Account.
-                        </p>
-                        <form action="#" method="post">
-                            <div class="styled-input agile-styled-input-top">
-                                <input type="text" placeholder="Name" name="Name" required="">
-                            </div>
-                            <div class="styled-input">
-                                <input type="email" placeholder="E-mail" name="Email" required="">
-                            </div>
-                            <div class="styled-input">
-                                <input type="password" placeholder="Password" name="password" id="password1" required="">
-                            </div>
-                            <div class="styled-input">
-                                <input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
-                            </div>
-                            <input type="submit" value="Sign Up">
+                        <h3 class="agileinfo_sign">Register</h3>
+
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <h4 class="modalppp">
+                                    Before continue confirm postal code
+                                </h4>
+                                <input type="text" name="Postal code*" placeholder="Postal code*" />
+                                <input type="button" name="next" class="next action-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <input type="text" name="Postal code" placeholder="Postal code*" />
+                                <input type="text" name="House number" placeholder="House number*" />
+                                <input type="text" name="Street name" placeholder="Street name*" />
+                                <input type="text" name="Mobile numbe" placeholder="Mobile number*" />
+                                <input type="text" name="Email address" placeholder="Email address*" />
+                                <div class="addres-signup">
+                                    <div class="signup-mod"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                    <div class="signup-mod1"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                    <div class="signup-mod"><img src="images/home.svg">
+                                        <p>Home</p>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="button-verify" value="Continue" />
+
+                            </fieldset>
                         </form>
                         <p>
-                            <a href="#">By clicking register, I agree to your terms</a>
+                            Already have an account?
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                            Sign in</a>
                         </p>
                     </div>
                 </div>
@@ -159,6 +207,7 @@
             <!-- //Modal content-->
         </div>
     </div>
+    <!--signup-modal-end-->
     <!-- navigation -->
     <div class="ban-top">
         <div class="container">
@@ -691,71 +740,62 @@
         </div>
     </div>
     <!-- //special offers -->
-    <!-- newsletter -->
-    <div class="footer-top">
+    <div class="section">
         <div class="container-fluid">
-            <div class="col-xs-8 agile-leftmk">
-                <h2>Get your Groceries delivered from local stores</h2>
-                <p>Free Delivery on your first order!</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="E-mail" name="email" required="">
-                    <input type="submit" value="Subscribe">
-                </form>
-                <div class="newsform-w3l">
-                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- footer second section -->
+                    <div class="w3l-grids-footer">
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/Delivery within 2o minutes.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Delivery within 20 minutes</h3>
+                                <p class="bottom-foot">deliver items within 20 minutes after order</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/time slots available.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Time slots available</h3>
+                                <p class="bottom-foot">choose times slots for delivery</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/Online support 24-7.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Online support 24/7</h3>
+                                <p class="bottom-foot">We are always happy to assist you.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-xs-3 offer-footer">
+                            <div class="col-xs-4 icon-fot">
+                                <img class="footer-icon" src="images/Quality assurance.png">
+                            </div>
+                            <div class="col-xs-8 text-form-footer">
+                                <h3>Quality assurance</h3>
+                                <p class="bottom-foot">We are always happy to assist you.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- //footer second section -->
                 </div>
             </div>
-            <div class="col-xs-4 w3l-rightmk">
-                <img src="images/tab3.png" alt=" ">
-            </div>
-            <div class="clearfix"></div>
         </div>
     </div>
-    <!-- //newsletter -->
     <!-- footer -->
-    <footer>
+    <footer class="home-footer">
         <div class="container">
-            <!-- footer second section -->
-            <div class="w3l-grids-footer">
-                <div class="col-xs-3 offer-footer">
-                    <div class="col-xs-4 icon-fot">
-                        <span class="fa fa-map-marker" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-8 text-form-footer">
-                        <h3>Delivery within 2o minutes</h3>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-xs-3 offer-footer">
-                    <div class="col-xs-4 icon-fot">
-                        <span class="fa fa-refresh" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-8 text-form-footer">
-                        <h3>Time slots available</h3>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-xs-3 offer-footer">
-                    <div class="col-xs-4 icon-fot">
-                        <span class="fa fa-times" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-8 text-form-footer">
-                        <h3>Online support 24/7</h3>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-xs-3 offer-footer">
-                    <div class="col-xs-4 icon-fot">
-                        <span class="fa fa-times" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-8 text-form-footer">
-                        <h3>Quality assurance</h3>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <!-- //footer second section -->
             <!-- footer third section -->
             <div class="footer-info w3-agileits-info">
                 <!-- footer categories -->
@@ -868,6 +908,24 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="payment-met">
+                        <h3>Payment Method</h3>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <img src="images/pay1.png">
+
+                                </li>
+                                <li>
+                                    <img src="images/pay2.png">
+                                </li>
+                                <li>
+                                    <img src="images/pay3.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- //social icons -->
                 <div class="clearfix"></div>
@@ -880,7 +938,7 @@
     <div class="copy-right">
         <div class="container">
             FP wholesale © 2021. All Rights Reserved
-            </p>
+
         </div>
     </div>
 
@@ -909,11 +967,22 @@
     </script>
     <!-- Large modal -->
     <!-- <script>
-		$('#').modal('show');
-	</script> -->
+        $('#').modal('show');
+    </script> -->
     <!-- //popup modal (for signin & signup)-->
 
     <!-- cart-js -->
+    <script>
+        var checkoutList = document.getElementById("checkoutList");
+        var checkoutItems = checkoutList.getElementsByClassName("step-checkout_item");
+        for (var i = 0; i < checkoutItems.length; i++) {
+            checkoutItems[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
     <script src="js/minicart.js"></script>
     <script>
         paypalm.minicartk.render(); //use only unique class names other than paypal1.minicart1.Also Replace same class name in css and minicart.min.js
@@ -937,7 +1006,7 @@
     </script>
     <!-- //cart-js -->
 
-    <!-- password-script -->
+    <!-- password-script
     <script>
         window.onload = function() {
             document.getElementById("password1").onchange = validatePassword;
@@ -1056,7 +1125,179 @@
     <script src="js/bootstrap.js"></script>
     <!-- //for bootstrap working -->
     <!-- //js-files -->
+    <script>
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
 
+        $(".next").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({
+                        'left': left,
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".previous").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'left': left
+                    });
+                    previous_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".submit").click(function() {
+            return false;
+        })
+    </script>
+    <script>
+        $(function() {
+            'use strict';
+
+            var body = $('body');
+
+            function goToNextInput(e) {
+                var key = e.which,
+                    t = $(e.target),
+                    sib = t.next('input');
+
+                if (key != 9 && (key < 48 || key > 57)) {
+                    e.preventDefault();
+                    return false;
+                }
+
+                if (key === 9) {
+                    return true;
+                }
+
+                if (!sib || !sib.length) {
+                    sib = body.find('input').eq(0);
+                }
+                sib.select().focus();
+            }
+
+            function onKeyDown(e) {
+                var key = e.which;
+
+                if (key === 9 || (key >= 48 && key <= 57)) {
+                    return true;
+                }
+
+                e.preventDefault();
+                return false;
+            }
+
+            function onFocus(e) {
+                $(e.target).select();
+            }
+
+            body.on('keyup', 'input', goToNextInput);
+            body.on('keydown', 'input', onKeyDown);
+            body.on('click', 'input', onFocus);
+
+        })
+    </script>
+    <!-- <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
 </body>
 
 </html>
